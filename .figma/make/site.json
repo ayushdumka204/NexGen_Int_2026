@@ -1,0 +1,10 @@
+{
+  "description": "Delivers a premium, responsive homepage showcasing market research services with clear navigation, compelling insights, and client credibility for enterprise users.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
