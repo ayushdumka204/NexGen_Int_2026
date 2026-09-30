@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 
-const nexGenLogo = "/images/nexgen-logo.png";
-const akshayaPatraLogo = "/images/client-akshaya-patra.png";
-const baxterLogo = "/images/client-baxter.png";
-const coloplastLogo = "/images/client-coloplast.png";
-const liqvidLogo = "/images/client-liqvid.png";
-const quikrLogo = "/images/client-quikr.png";
-const samsungMedisonLogo = "/images/client-samsung-medison.png";
-const wheelsEyeLogo = "/images/client-wheelseye.png";
+const imagePath = (fileName: string) => `${import.meta.env.BASE_URL}images/${fileName}`;
+const nexGenLogo = imagePath("nexgen-logo.png");
+const akshayaPatraLogo = imagePath("client-akshaya-patra.png");
+const baxterLogo = imagePath("client-baxter.png");
+const coloplastLogo = imagePath("client-coloplast.png");
+const liqvidLogo = imagePath("client-liqvid.png");
+const quikrLogo = imagePath("client-quikr.png");
+const samsungMedisonLogo = imagePath("client-samsung-medison.png");
+const wheelsEyeLogo = imagePath("client-wheelseye.png");
+const researchTeamImage = imagePath("research-team.jpg");
 
 type MenuItem = {
   label: string;
@@ -536,7 +538,7 @@ function App() {
           <div className="understanding__body scroll-reveal">
             <figure className="research-photo">
               <img
-                src="/images/research-team.jpg"
+                src={researchTeamImage}
                 alt="A diverse research team in discussion around a meeting table"
               />
               <div className="research-photo__signal" aria-hidden="true">
