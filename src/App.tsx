@@ -536,7 +536,7 @@ function App() {
           <div className="understanding__body scroll-reveal">
             <figure className="research-photo">
               <img
-                src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=1000&q=85"
+                src="/images/research-team.jpg"
                 alt="A diverse research team in discussion around a meeting table"
               />
               <div className="research-photo__signal" aria-hidden="true">
