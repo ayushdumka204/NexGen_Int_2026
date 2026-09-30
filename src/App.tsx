@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import nexGenLogo from "./assets/nexgen-logo.png";
-import akshayaPatraLogo from "./assets/client-akshaya-patra.png";
-import baxterLogo from "./assets/client-baxter.png";
-import coloplastLogo from "./assets/client-coloplast.png";
-import liqvidLogo from "./assets/client-liqvid.png";
-import quikrLogo from "./assets/client-quikr.png";
-import samsungMedisonLogo from "./assets/client-samsung-medison.png";
-import wheelsEyeLogo from "./assets/client-wheelseye.png";
+
+const nexGenLogo = "/images/nexgen-logo.png";
+const akshayaPatraLogo = "/images/client-akshaya-patra.png";
+const baxterLogo = "/images/client-baxter.png";
+const coloplastLogo = "/images/client-coloplast.png";
+const liqvidLogo = "/images/client-liqvid.png";
+const quikrLogo = "/images/client-quikr.png";
+const samsungMedisonLogo = "/images/client-samsung-medison.png";
+const wheelsEyeLogo = "/images/client-wheelseye.png";
 
 type MenuItem = {
   label: string;
