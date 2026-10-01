@@ -3,6 +3,8 @@ import CustomCursor from "../components/home/CustomCursor"
 import Footer from "../components/layout/Footer"
 import Header from "../components/layout/Header"
 import Arrow from "../components/ui/Arrow"
+
+const contactImageUrl = `${import.meta.env.BASE_URL}images/contact-research.jpg`
 import ScrollToTop from "../components/ui/ScrollToTop"
 import useScrollReveal from "../hooks/useScrollReveal"
 
@@ -227,7 +229,7 @@ export default function ContactPage() {
           <figure className="contact-hero__visual reveal reveal--five">
             <div className="contact-hero__frame" aria-hidden="true" />
             <img
-              src="https://images.unsplash.com/photo-1653503425441-9d975e51ce91?auto=format&fit=crop&w=1200&q=86"
+              src={contactImageUrl}
               alt="Two professionals discussing research at a table"
             />
             <div className="contact-hero__image-note">
