@@ -1,11 +1,13 @@
+const imageUrl = (name: string) => `${import.meta.env.BASE_URL}images/${name}`
+
 const clients = [
-  { name: "Akshaya Patra", logo: "/images/client-akshaya-patra.png" },
-  { name: "Quikr", logo: "/images/client-quikr.png" },
-  { name: "WheelsEye", logo: "/images/client-wheelseye.png" },
-  { name: "LIQVID", logo: "/images/client-liqvid.png" },
-  { name: "Samsung Medison", logo: "/images/client-samsung-medison.png" },
-  { name: "Coloplast", logo: "/images/client-coloplast.png" },
-  { name: "Baxter", logo: "/images/client-baxter.png" },
+  { name: "Akshaya Patra", logo: imageUrl("client-akshaya-patra.png") },
+  { name: "Quikr", logo: imageUrl("client-quikr.png") },
+  { name: "WheelsEye", logo: imageUrl("client-wheelseye.png") },
+  { name: "LIQVID", logo: imageUrl("client-liqvid.png") },
+  { name: "Samsung Medison", logo: imageUrl("client-samsung-medison.png") },
+  { name: "Coloplast", logo: imageUrl("client-coloplast.png") },
+  { name: "Baxter", logo: imageUrl("client-baxter.png") },
 ]
 
 export default function ClientCarousel() {
