@@ -415,38 +415,6 @@ export default function ContactPage() {
               />
             </label>
 
-            <div className="contact-captcha">
-              <div
-                className="contact-captcha__code"
-                aria-label={`CAPTCHA code ${captcha}`}
-              >
-                {captcha}
-              </div>
-              <button
-                type="button"
-                onClick={() => {
-                  setCaptcha(createCaptcha())
-                  setCaptchaError("")
-                }}
-              >
-                click here to refresh
-              </button>
-              <label className="contact-field">
-                <span>Enter Captcha *</span>
-                <input
-                  name="captcha"
-                  type="text"
-                  autoComplete="off"
-                  aria-invalid={Boolean(captchaError)}
-                  aria-describedby="captcha-error"
-                  required
-                />
-              </label>
-              <p id="captcha-error" role="alert">
-                {captchaError}
-              </p>
-            </div>
-
             <button className="contact-submit interactive" type="submit">
               <span>Request an Estimate</span>
               <Arrow />
