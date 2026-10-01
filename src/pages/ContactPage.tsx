@@ -234,7 +234,7 @@ export default function ContactPage() {
               <span>Human understanding</span>
               <strong>Research starts with a conversation.</strong>
             </div>
-            <figcaption>Photo by Yash Parashar / Unsplash</figcaption>
+            <figcaption>Photo by NexGen</figcaption>
           </figure>
 
           <div className="contact-needs reveal reveal--five">
