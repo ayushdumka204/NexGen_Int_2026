@@ -101,7 +101,9 @@ const megaMenus: Record<string, MenuItem[]> = {
 const navItems = Object.keys(megaMenus)
 
 function getSectionHref(item: string) {
-  return `#${item.toLowerCase().replaceAll(" ", "-").replace("&", "and")}`
+  if (item === "Contact") return "/contact"
+  const section = `#${item.toLowerCase().replaceAll(" ", "-").replace("&", "and")}`
+  return window.location.pathname === "/contact" ? `/${section}` : section
 }
 
 export default function Header() {
@@ -109,6 +111,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openMenu, setOpenMenu] = useState<string | null>(null)
   const [openMobileMenu, setOpenMobileMenu] = useState<string | null>(null)
+  const isContactPage = window.location.pathname === "/contact"
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30)
@@ -172,7 +175,11 @@ export default function Header() {
                   {megaMenus[item].map((entry) => (
                     <a
                       className={entry.featured ? "featured" : ""}
-                      href={entry.href}
+                      href={
+                        isContactPage && entry.href.startsWith("#")
+                          ? `/${entry.href}`
+                          : entry.href
+                      }
                       key={entry.label}
                     >
                       <span>{entry.label}</span>
@@ -185,10 +192,7 @@ export default function Header() {
           ))}
         </nav>
         <LanguageSelector />
-        <a
-          className="nav-cta interactive"
-          href="mailto:mail@nexgenint.com?subject=Request a Proposal"
-        >
+        <a className="nav-cta interactive" href="/contact#contact-form">
           Request a Proposal <Arrow diagonal />
         </a>
         <button

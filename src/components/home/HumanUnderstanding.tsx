@@ -30,7 +30,7 @@ export default function HumanUnderstanding() {
             <small>Observation / Interpretation / Evidence</small>
           </div>
           <figcaption>
-            Photo by NexGen
+            Research in context · Photo by Smartworks Coworking / Unsplash
           </figcaption>
         </figure>
         <div className="editorial-copy">
