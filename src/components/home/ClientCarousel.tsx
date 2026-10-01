@@ -1,4 +1,4 @@
-const imageUrl = (name: string) => `${import.meta.env.BASE_URL}images/${name}`
+const imageUrl = (name: string) => `/images/${name}`
 
 const clients = [
   { name: "Akshaya Patra", logo: imageUrl("client-akshaya-patra.png") },

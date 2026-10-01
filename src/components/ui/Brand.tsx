@@ -2,7 +2,7 @@ type BrandProps = {
   light?: boolean
 }
 
-const logoUrl = `${import.meta.env.BASE_URL}images/nexgen-logo.png`
+const logoUrl = "/images/nexgen-logo.png"
 
 export default function Brand({ light = false }: BrandProps) {
   return (

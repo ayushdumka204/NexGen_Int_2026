@@ -4,7 +4,7 @@ import Footer from "../components/layout/Footer"
 import Header from "../components/layout/Header"
 import Arrow from "../components/ui/Arrow"
 
-const contactImageUrl = `${import.meta.env.BASE_URL}images/contact-research.jpg`
+const contactImageUrl = "/images/contact-research.jpg"
 import ScrollToTop from "../components/ui/ScrollToTop"
 import useScrollReveal from "../hooks/useScrollReveal"
 

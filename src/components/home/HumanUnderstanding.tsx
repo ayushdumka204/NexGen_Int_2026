@@ -1,4 +1,4 @@
-const researchImageUrl = `${import.meta.env.BASE_URL}images/research-team.jpg`
+const researchImageUrl = "/images/research-team.jpg"
 
 export default function HumanUnderstanding() {
   return (
